@@ -1,7 +1,21 @@
+:root {
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+  --grayish-blue: hsl(225, 20%, 60%);
+  --light-grayish-red: hsl(14, 92%, 95%);
+  --light-red: hsl(15, 100%, 70%);
+  --light-grayish-blue1: hsl(224, 65%, 95%);
+  --light-grayish-blue2: hsl(223, 50%, 87%);
+  --pale-blue: hsl(226, 100%, 87%);
+  --soft-cyan: hsl(174, 77%, 80%);
+  --strong-cyan: hsl(174, 86%, 45%);
+  --very-pale-blue: hsl(230, 100%, 99%);
+  --white: hsl(230, 100%, 99%);
+  --header-primary: rgb(29, 29, 29);
+}
 * {
-  background-color: hsl(230, 100%, 99%);
   color: hsl(225, 20%, 60%);
   font-family: Manrope, Helvetica, sans-serif;
+  box-sizing: content-box;
 }
 .attribution {
   font-size: 11px;
@@ -9,4 +23,40 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+body {
+  background: var(--very-pale-blue) url("./images/bg-pattern.svg") no-repeat;
+  background-size: 100% 50vh;
+}
+.headerDiv {
+  background-image: url("./images/pattern-circles.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  height: 20vh;
+  margin: 20px;
+  position: relative;
+}
+.centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.primaryHeader {
+  font-weight: 800;
+  color: var(--header-primary);
+}
+.secondaryHeader {
+  display: block;
+  font-weight: 400;
+}
+.box {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 10px;
+  width: 50%;
+  height: 50%;
+  margin-top: 30px;
 }
