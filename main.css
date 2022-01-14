@@ -1,0 +1,12 @@
+* {
+  background-color: hsl(230, 100%, 99%);
+  color: hsl(225, 20%, 60%);
+  font-family: Manrope, Helvetica, sans-serif;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
