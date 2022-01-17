@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./toggleSwitch.css" />
     <title>Frontend Mentor | Interactive pricing component</title>
     <!--https://www.w3schools.com/tags/tag_title.asp title is mandatory-->
 
@@ -44,7 +45,10 @@
         </div>
         <span class="toogleContainer">
           Monthly Billing
-          <input type="checkbox" />
+          <label class="switch">
+            <input type="checkbox" id="toggle" />
+            <span class="slider"></span>
+          </label>
           Yearly Billing
           <span class="discountInfo" id="discountInfo">25% discount</span>
         </span>
