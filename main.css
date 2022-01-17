@@ -15,7 +15,6 @@
 * {
   color: hsl(225, 20%, 60%);
   font-family: Manrope, Helvetica, sans-serif;
-  box-sizing: content-box;
 }
 .attribution {
   font-size: 11px;
@@ -26,7 +25,9 @@
 }
 body {
   background: var(--very-pale-blue) url("./images/bg-pattern.svg") no-repeat;
-  background-size: 100% 50vh;
+  background-size: 100% 40vh;
+  height: 100%;
+  box-sizing: content-box;
 }
 .headerDiv {
   background-image: url("./images/pattern-circles.svg");
@@ -36,6 +37,13 @@ body {
   height: 20vh;
   margin: 20px;
   position: relative;
+}
+.centerDivH {
+  position: relative;
+
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
 }
 .centerDiv {
   position: absolute;
@@ -54,9 +62,59 @@ body {
 }
 .box {
   background-color: var(--white);
-  border-radius: 20px;
-  box-shadow: 10px;
-  width: 50%;
-  height: 50%;
+  border-radius: 10px;
+  width: 30vw;
   margin-top: 30px;
+  box-shadow: 0 0 20px 1px #ccc;
+  font-size: 12px;
+}
+
+.topBox {
+  border-bottom: 1px solid var(--very-pale-blue);
+}
+.twoColumns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.sliderSummary {
+  height: 6em;
+}
+.sliderPageViews {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.amountInfo::after {
+  content: " / month";
+  font-size: 1rem;
+  font-weight: initial;
+}
+.amountInfo {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--dark-desaturated-blue);
+}
+.profitsButtonBox {
+  height: 10vh;
+}
+.profitsList {
+  text-align: initial;
+}
+ul {
+  list-style: none;
+}
+li::before {
+  content: "\2713";
+  color: var(--strong-cyan);
+  display: inline-block;
+  width: 1em;
+  margin-right: 1em;
+}
+
+.startBtn {
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 20px;
+  color: var(--grayish-blue);
+  padding: 0.5em;
+  width: 15vh;
 }
