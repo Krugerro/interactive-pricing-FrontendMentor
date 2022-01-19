@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./toggleSwitch.css" />
+    <link rel="stylesheet" href="./slider.css" />
     <title>Frontend Mentor | Interactive pricing component</title>
     <!--https://www.w3schools.com/tags/tag_title.asp title is mandatory-->
 
@@ -33,28 +34,36 @@
         </div>
       </div>
     </header>
-    <div class="centerDivH box">
-      <div class="topBox">
+    <div class="centerDivH box priceBox">
+     
         <div class="twoColumns sliderSummary">
           <div class="sliderPageViews">100k pageviews</div>
 
           <div class="amountInfo">$16.00</div>
         </div>
         <div class="sliderConteiner">
-          <input type="range" id="pageSlider" />
+          <input type="range" id="pageSlider" min=0 max = 1000  list="tickmarks" value=100 class="pageSlicer"/>
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+            <option value="500"></option>
+            <option value="1000"></option>
+            </datalist>
         </div>
-        <span class="toogleContainer">
+        <div class="toogleContainer">
           Monthly Billing
           <label class="switch">
             <input type="checkbox" id="toggle" />
             <span class="slider"></span>
           </label>
           Yearly Billing
-          <span class="discountInfo" id="discountInfo">25% discount</span>
-        </span>
-      </div>
-
-      <div class="twoColumns profitsButtonBox">
+          <span class="discountInfo">25% discount</span>
+        </div>
+      
+</div>
+      <div class="twoColumns profitsButtonBox box centerDivH">
         <div>
           <ul class="profitsList">
             <li class="profit">Unlimited websites</li>
@@ -67,7 +76,7 @@
         </div>
       </div>
     </div>
-    <div class="centerDiv">
+    <div class="centerDivH">
       <footer class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

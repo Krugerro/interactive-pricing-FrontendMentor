@@ -3,9 +3,9 @@
 
   display: inline-block;
 
-  margin-left: 2em;
+  margin-left: 2.5em;
   cursor: pointer;
-  margin-right: 2em;
+  margin-right: 2.5em;
 }
 .slider {
   position: absolute;

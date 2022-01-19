@@ -11,6 +11,7 @@
   --very-pale-blue: hsl(230, 100%, 99%);
   --white: hsl(230, 100%, 99%);
   --header-primary: rgb(29, 29, 29);
+  --shadow: hsl(222, 87%, 97%);
 }
 * {
   color: hsl(225, 20%, 60%);
@@ -19,6 +20,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -62,23 +64,17 @@ body {
 }
 .box {
   background-color: var(--white);
-  border-radius: 10px;
   width: 30vw;
-  margin-top: 30px;
-  box-shadow: 0 0 20px 1px #ccc;
   font-size: 12px;
 }
 
-.topBox {
-  border-bottom: 1px solid var(--very-pale-blue);
-}
 .twoColumns {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
 }
 .sliderSummary {
-  height: 6em;
+  height: 100px;
 }
 .sliderPageViews {
   text-transform: uppercase;
@@ -94,8 +90,25 @@ body {
   font-size: 1.8rem;
   color: var(--dark-desaturated-blue);
 }
+.toogleContainer {
+  height: 50px;
+}
+.discountInfo {
+  background-color: #fcf1ed;
+  color: #d18d7a;
+  padding: 0.3em;
+  border-radius: 10px;
+  margin-left: 1em;
+}
+.priceBox {
+  box-shadow: 0 0 20px 0px var(--shadow);
+  border-radius: 15px 15px 0 0;
+}
 .profitsButtonBox {
-  height: 10vh;
+  margin-top: 1px;
+  height: 100px;
+  box-shadow: 0 0 20px 0px var(--shadow);
+  border-radius: 0 0 15px 15px;
 }
 .profitsList {
   text-align: initial;
@@ -110,11 +123,14 @@ li::before {
   width: 1em;
   margin-right: 1em;
 }
+li {
+  margin-bottom: 5px;
+}
 
 .startBtn {
   background-color: var(--dark-desaturated-blue);
   border-radius: 20px;
   color: var(--grayish-blue);
-  padding: 0.5em;
-  width: 15vh;
+  padding: 0.8em;
+  width: 150px;
 }

@@ -1,0 +1,41 @@
+::root {
+  --slider-size: "40px";
+}
+.sliderConteiner {
+  height: 50px;
+  width: 100%;
+}
+.pageSlicer {
+  height: 8px;
+  width: 80%;
+  border-radius: 5px;
+  background-color: var(--light-grayish-blue1);
+  appearance: none;
+  outline: none;
+  opacity: 0.7;
+}
+.pageSlicer:hover {
+  opacity: 1;
+}
+.pageSlicer::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: var(--strong-cyan) url(./images/icon-slider.svg) no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  margin-top: -11px;
+}
+.pageSlicer::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: var(--strong-cyan);
+  cursor: pointer;
+  margin: -10px;
+}
+input[type="range"]::-ms-thumb {
+  margin: 0; /* Reset margin in Edge since it supports -webkit-slider-thumb as well */
+}
