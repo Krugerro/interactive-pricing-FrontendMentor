@@ -16,6 +16,7 @@
 * {
   color: hsl(225, 20%, 60%);
   font-family: Manrope, Helvetica, sans-serif;
+  font-weight: 800;
 }
 .attribution {
   font-size: 11px;
@@ -28,6 +29,7 @@
 body {
   background: var(--very-pale-blue) url("./images/bg-pattern.svg") no-repeat;
   background-size: 100% 40vh;
+  min-height: 200px;
   height: 100%;
   box-sizing: content-box;
 }
@@ -65,6 +67,7 @@ body {
 .box {
   background-color: var(--white);
   width: 30vw;
+  min-width: 450px;
   font-size: 12px;
 }
 
@@ -92,6 +95,7 @@ body {
 }
 .toogleContainer {
   height: 50px;
+  margin-left: 50px;
 }
 .discountInfo {
   background-color: #fcf1ed;
@@ -99,6 +103,7 @@ body {
   padding: 0.3em;
   border-radius: 10px;
   margin-left: 1em;
+  visibility: hidden;
 }
 .priceBox {
   box-shadow: 0 0 20px 0px var(--shadow);
@@ -130,7 +135,9 @@ li {
 .startBtn {
   background-color: var(--dark-desaturated-blue);
   border-radius: 20px;
-  color: var(--grayish-blue);
+  color: var(--white);
   padding: 0.8em;
   width: 150px;
+  font-weight: 600;
+  font-size: 00.8em;
 }
