@@ -25,7 +25,7 @@
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  background: var(--strong-cyan) url(./images/icon-slider.svg) no-repeat;
+  background: var(--strong-cyan) url(../images/icon-slider.svg) no-repeat;
   background-position: center center;
   cursor: pointer;
 

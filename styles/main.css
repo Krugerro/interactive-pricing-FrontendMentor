@@ -27,14 +27,14 @@
   color: hsl(228, 45%, 44%);
 }
 body {
-  background: var(--very-pale-blue) url("./images/bg-pattern.svg") no-repeat;
+  background: var(--very-pale-blue) url("../images/bg-pattern.svg") no-repeat;
   background-size: 100% 40vh;
   min-height: 200px;
   height: 100%;
   box-sizing: content-box;
 }
 .headerDiv {
-  background-image: url("./images/pattern-circles.svg");
+  background-image: url("../images/pattern-circles.svg");
   background-position: center center;
   background-repeat: no-repeat;
 
@@ -105,13 +105,16 @@ body {
   margin-left: 1em;
   visibility: hidden;
 }
+.discountInfo::after {
+  content: " discount";
+}
 .priceBox {
   box-shadow: 0 0 20px 0px var(--shadow);
   border-radius: 15px 15px 0 0;
 }
 .profitsButtonBox {
   margin-top: 1px;
-  height: 100px;
+  height: 120px;
   box-shadow: 0 0 20px 0px var(--shadow);
   border-radius: 0 0 15px 15px;
 }
@@ -135,9 +138,9 @@ li {
 .startBtn {
   background-color: var(--dark-desaturated-blue);
   border-radius: 20px;
-  color: var(--white);
-  padding: 0.8em;
+  color: var(--light-grayish-blue2);
+  padding: 1em;
   width: 150px;
   font-weight: 600;
-  font-size: 00.8em;
+  font-size: 0.9em;
 }

@@ -44,5 +44,3 @@ const calculateAndFormatNewPrice = (isDiscount) => {
     2
   ).toFixed(2)}`;
 };
-
-calculateSliderColors();
