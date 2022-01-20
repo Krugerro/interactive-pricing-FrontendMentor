@@ -28,7 +28,6 @@
   background: var(--strong-cyan) url(../images/icon-slider.svg) no-repeat;
   background-position: center center;
   cursor: pointer;
-
   -webkit-box-shadow: 0px 10px 20px 5px var(--strong-cyan);
   box-shadow: 0px 10px 20px 5px var(--strong-cyan);
   transition: 0.5s;
@@ -37,7 +36,8 @@
   width: 40px;
   height: 40px;
   border-radius: 100px;
-  background: var(--strong-cyan);
+  background: var(--strong-cyan) url(../images/icon-slider.svg) no-repeat center;
+  box-shadow: 0px 10px 20px 5px var(--strong-cyan);
   cursor: pointer;
   margin: -10px;
 }
