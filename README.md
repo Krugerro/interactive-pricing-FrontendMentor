@@ -1,6 +1,6 @@
 # Back to roots HTML, CSS project
 
-After using React and Material I decided to learn the basics, funamentals pure code which browsers can eat. I realized how much materialize does for me and valu it for this even more. First approch for mobile view and x-browsers.
+After using React and Material I decided to learn the basics, fundamentals pure code which browsers can eat. I realized how much materialize does for me and value it for this even more. First approach for mobile view and x-browsers.
 
 # Frontend Mentor - Interactive pricing component solution
 
